@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas
+            cm, mm, in (polegada), px, pt (ponto), pc (paica)
+
+            Medidas relativas
+            em (rel. ao tam. atual / M maiusculo  da fonte), ex (rel. a altura x), rem, vw (rel. a larg. da viewport), vh (rel. a altura da viewport), %
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+            /* lighter normal bold bolder 100 200 ... 800 900 */
+        }
+        h1 {
+            /*font-family: 'Work Sans', sans-serif;
+            font-weight: normal;
+            font-size: 3em;
+            font-style: italic; */
+            
+            /* shorthand font (ordem):
+            - font-style -> font-weight -> font-size -> font-family*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+            
+        }
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat totam vero corporis sapiente recusandae, quasi nostrum quibusdam, ad fuga sequi officia sed exercitationem corrupti excepturi repudiandae, laudantium minus velit illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti laboriosam voluptatem accusantium quidem placeat, debitis ipsa temporibus vitae aliquam harum corrupti dolorum possimus, numquam exercitationem excepturi recusandae quasi ea beatae?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illum alias earum? Sequi alias, totam, laboriosam similique aut perspiciatis, accusantium ducimus illo distinctio assumenda adipisci a et autem. Facere, necessitatibus?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eligendi rerum asperiores quaerat? Officia corrupti iusto tempora cumque beatae recusandae modi, delectus distinctio sunt assumenda nulla exercitationem eligendi in dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi delectus distinctio voluptatum rerum pariatur totam, autem corrupti doloremque, alias voluptatem ipsa iste velit odit esse nostrum debitis deserunt quibusdam quae.</p>
+</body>
+</html>
