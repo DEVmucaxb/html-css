@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário (Login)</h1>
+    <form action="cadstro.php" method="get" autocomplete="on">
+        <p> <!--O recomendado seria usar DIV`s-->
+            <label for="idusuario">Usuário: </label>
+            <input type="text" name="usuario" id="idusuario" required minlength="5" maxlength="30" size="10" autocomplete="username" placeholder="Usuário"> <!--Os atributos name e id podem sim ter a mesma identificação (nome)-->
+        </p>
+        <p>
+            <label for="idsenha">Senha: </label>
+            <input type="password" name="senha" id="idsenha" required minlength="8" size="8" placeholder="Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Corrigir">
+        </p>
+    </form>
+</body>
+</html>
