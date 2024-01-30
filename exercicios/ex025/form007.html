@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        option:nth-child(2n) {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <fieldset>
+            <legend>Estados</legend>
+            <p>
+                <label for="idestado">Estado: </label>
+                <select name="estado" id="idestado">
+                    <option value="" selected>---Escolha---</option>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="ES">Espírito Santo</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="CE">Ceará</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PI">Piauí</option>
+                        <option value="BA">Bahia</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="SE">Sergipe</option>
+                    </optgroup>
+
+                    <optgroup label="Região Norte">
+                        <option value="AM">Amazonas</option>
+                        <option value="PA">Pará</option>
+                        <option value="AC">Acre</option>
+                        <option value="RR">Roraima</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="AP">Amapá</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="MT">Mato Grosso do sul</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="GO">Goiás</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Profissões</legend>
+            <label for="profissao">Profissão</label>
+            <input type="text" name="profissao" id="profissao" list="listaprofissao">
+            <datalist id="listaprofissao">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+                <option value="ENFERM">Enfermeiro</option>
+            </datalist>
+        </fieldset>
+
+        <p>
+            <label for="idmsg">Mensagem: </label>
+            <textarea name="msg" id="idmsg" cols="30" rows="10">Sua mensagem aqui</textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Corrigir">
+        </p>
+    </form>
+</body>
+</html>
